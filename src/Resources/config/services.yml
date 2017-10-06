@@ -1,0 +1,5 @@
+services:
+  minimal_manager.module.related:
+      class: MinimalOriginal\RelatedBundle\MinimalModule
+      arguments: ['@doctrine.orm.entity_manager']
+      tags: [minimal_manager.module]
